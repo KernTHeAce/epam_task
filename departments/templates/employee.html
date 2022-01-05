@@ -9,15 +9,15 @@
 {% block title %} 3 {% endblock %}
 
 {% block table %}
-<table class="table">
+<table class="empl_table">
 {% for item in items %}
 <tr>
     <td class="td_class">{{item.name}}</td>
-    <td class="td_class">{{item.department}}</td>
+    <td class="td_class">{{item.department.name}}</td>
     <td class="td_class">{{item.date_of_birth}}</td>
     <td class="td_class">{{item.solary}}</td>
-    <td class="td_button"><input type = "image" src = "C:\Users\Kern\Pictures\IMG_0484.JPG"></td>
-    <td class="td_button"><button>delete</button></td>
+    <td class="td_class td_class_for_button"><button class="button" onclick="Edit()"><image src="{% static 'icons/pencil-svgrepo-com.svg' %}"></image></button></td>
+    <td class="td_class td_class_for_button"><button class="button" onclick="Edit()"><image src="{% static 'icons/iconmonstr-trash-can-27.svg' %}"></image></button></td>
 </tr>
 
 

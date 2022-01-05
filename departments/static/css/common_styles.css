@@ -28,14 +28,23 @@ header {
     font-size: 35px;
 }
 
-.table {
-    display: flex;
-    justify-content: center;
-
+.td_class {
+    border: solid;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
 }
 
-.td_class {
-    padding: 10px 120px 10px 60px;
+.button {
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    padding: 10px 10px 0px 10px;
+}
+
+.td_class_for_button {
+    width: 38px;
 }
 
 
